@@ -13,7 +13,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "powermanager.hpp"
-#include "Signal_Clone/signal_clone.hpp"
 /* Private functions ---------------------------------------------------------*/
 
 /**

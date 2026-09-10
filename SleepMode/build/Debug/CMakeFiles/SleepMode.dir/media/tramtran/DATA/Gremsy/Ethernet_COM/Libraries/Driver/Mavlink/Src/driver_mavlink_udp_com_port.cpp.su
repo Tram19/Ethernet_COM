@@ -1,0 +1,21 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_common.hpp:65:13:RTOS::Base::Common::~Common()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_common.hpp:79:24:virtual StatusEnum RTOS::Base::Common::Open()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_common.hpp:85:24:virtual StatusEnum RTOS::Base::Common::Close()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_common.hpp:92:18:virtual bool RTOS::Base::Common::IsOpen()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_task.hpp:99:19:virtual RTOS::Base::Task& RTOS::Base::Task::operator+=(RTOS::FuncRtosTaskCallbackType)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_task.hpp:110:18:virtual void RTOS::Base::Task::Sleep(uint32_t)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_task.hpp:116:18:virtual void RTOS::Base::Task::Sleep()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Driver/ConnectionBase.hpp:66:24:virtual StatusEnum Connection::Open()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Driver/ConnectionBase.hpp:73:24:virtual StatusEnum Connection::Close()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Driver/ConnectionBase.hpp:80:18:virtual void Connection::ReadDataCallback(std::span<const unsigned char>)	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Driver/Mavlink/Src/driver_mavlink_udp_com_port.cpp:105:6:virtual void Driver::Mavlink::UdpCOMPort::OnUdpReceived(const uint8_t*, uint16_t)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Driver/Mavlink/Src/driver_mavlink_udp_com_port.cpp:50:12:virtual StatusEnum Driver::Mavlink::UdpCOMPort::Open()	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Driver/Mavlink/Src/driver_mavlink_udp_com_port.cpp:80:12:virtual StatusEnum Driver::Mavlink::UdpCOMPort::Close()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Driver/Mavlink/Src/driver_mavlink_udp_com_port.cpp:100:6:virtual bool Driver::Mavlink::UdpCOMPort::SinkIt(std::span<const unsigned char>)	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_common.hpp:65:13:virtual RTOS::Base::Common::~Common()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_task.hpp:84:13:RTOS::Base::Task::~Task()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/Base/Inc/rtos_base_task.hpp:84:13:virtual RTOS::Base::Task::~Task()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/CMSIS_OS_V2/Inc/rtos_cmsis_os_v2_task_event.hpp:102:13:RTOS::TaskEvent::~TaskEvent()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Driver/Mavlink/Inc/driver_mavlink_udp_com_port.hpp:81:5:Driver::Mavlink::UdpCOMPort::~UdpCOMPort()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Driver/Mavlink/Inc/driver_mavlink_udp_com_port.hpp:81:5:virtual Driver::Mavlink::UdpCOMPort::~UdpCOMPort()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/CMSIS_OS_V2/Inc/rtos_cmsis_os_v2_task_event.hpp:102:13:virtual RTOS::TaskEvent::~TaskEvent()	8	static

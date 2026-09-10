@@ -1,0 +1,3 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_config.cpp:1079:6:void g_hardware_init()	32	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_config.cpp:1096:6:void g_hardware_delay(int)	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_config.cpp:1107:9:PinEnum g_hardware_convert_gpio_to_pin_enum(const GPIO_TypeDef*, uint16_t)	0	static

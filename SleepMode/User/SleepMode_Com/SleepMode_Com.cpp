@@ -7,8 +7,6 @@
 #include "SleepMode_Com.hpp"
 #include "Modules/Ethernet_COM/Ethernet_COM.hpp"
 #include "StorageParam/StorageParam.hpp"
-
-#include "Modules/SignalClone/Inc/module_signal_clone.hpp"
 #include "Hardware/Stm32U5/Inc/hardware_u5_peripheral_io.hpp"
 #include "gremsy.hpp"
 #include "RTOS/rtos.hpp"
@@ -17,42 +15,10 @@
 #include "Driver/Mavlink/Inc/driver_mavlink_include.hpp"
 #include "IOExpander/IOExpander.hpp"
 #include "PowerManager/powermanager.hpp"
-#include "SleepModeCommand/SleepModeCommand.hpp"
 #include "wwdg.h"
 #include "charconv"
 
-static Module::SignalClone::Config clone_config = {
-    .master_timer_instance = TIM3,
-    .master_prescaler = 0,
-    .master_period = 160000,
-    .master_pulse = 8,
-    .master_input_trigger = TIM_TS_TI1FP1,
-    .master_pwm_channel_1 = TIM_CHANNEL_3,
-    .master_pwm_channel_2 = TIM_CHANNEL_4,
 
-    .slave_timer_instance = TIM2,
-    .slave_input_trigger = TIM_TS_ITR2,
-    .slave_pwm_channel_1 = TIM_CHANNEL_1,
-
-    .master_trig_port = GPIOA,
-    .master_trig_pin = GPIO_PIN_6,
-    .master_trig_af = GPIO_AF2_TIM3,
-    .master_trig_pull = GPIO_PULLDOWN,
-
-    .master_pwm1_port = GPIOB,
-    .master_pwm1_pin = GPIO_PIN_0,
-    .master_pwm1_af = GPIO_AF2_TIM3,
-
-    .master_pwm2_port = GPIOB,
-    .master_pwm2_pin = GPIO_PIN_1,
-    .master_pwm2_af = GPIO_AF2_TIM3,
-
-    .slave_pwm1_port = GPIOA,
-    .slave_pwm1_pin = GPIO_PIN_15,
-    .slave_pwm1_af = GPIO_AF1_TIM2
-};
-
-static Module::SignalClone::Clone signal_clone_obj(clone_config);
 
 /* Private define ------------------------------------------------------------*/
 using namespace Driver::Mavlink;
@@ -96,8 +62,6 @@ StatusEnum SleepMode_Com::Open()
 	_powermanager.pExpander = &_ioexpander;
 	_powermanager.Open();
 
-    static SleepModeCommand sleep_mode_command(*this);
-    sleep_mode_command.Open();
 
 	HAL_WWDG_Refresh(&hwwdg);
     
@@ -208,8 +172,6 @@ StatusEnum SleepMode_Com::_mainTaskFunc()
     g_os_delay(1);
     g_os_delay(10);
 
-    signal_clone_obj.Open();
-    signal_clone_obj.Start();
 
 
   while(1) {
@@ -292,7 +254,6 @@ StatusEnum SleepMode_Com::_mainTaskFunc()
             _som_heartbeat_seen = false;
             const StatusEnum result = _powermanager.PowerOn();
             LOGI << "PowerOn result: " << static_cast<int>(result) << LEND;
-            signal_clone_obj.Start();
             if (result == OK) {
                 _notify_ack(AckResult::InProgress);
                 _som_state = SOM_WAIT_WAKEUP;
@@ -351,7 +312,6 @@ StatusEnum SleepMode_Com::_mainTaskFunc()
 
                 if (som_is_sleeping && current_is_off && !_poweroff_started) {
                     LOGW << "SOM sleep confirmed, powering off auxiliary rails" << LEND;
-                    signal_clone_obj.Stop();
                     const StatusEnum result = _powermanager.SleepSom();
                     LOGI << "PowerOff result: " << static_cast<int>(result) << LEND;
                     if (result != OK) {

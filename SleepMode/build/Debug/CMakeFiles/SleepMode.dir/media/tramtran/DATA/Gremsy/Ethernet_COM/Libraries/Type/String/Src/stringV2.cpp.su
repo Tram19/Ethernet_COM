@@ -1,0 +1,2 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/stringV2.cpp:40:6:void Type::StringV2::Free(void*)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/stringV2.cpp:52:7:void* Type::StringV2::Malloc(int)	8	static

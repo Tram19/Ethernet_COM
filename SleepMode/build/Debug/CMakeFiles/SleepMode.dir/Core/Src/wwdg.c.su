@@ -1,0 +1,2 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/wwdg.c:30:6:MX_WWDG_Init	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/wwdg.c:55:6:HAL_WWDG_MspInit	16	static

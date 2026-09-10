@@ -34,12 +34,11 @@
 using namespace std;
 #endif
 
-#include "Math/math.hpp"
+
 #include "gremsy_component_hall_v1.hpp"
 #include "gremsy_version.hpp"
 #include "program.hpp"
 
-#include "API/api_module_config.hpp"
 #include "inplace_function.h"
 /* Exported types ------------------------------------------------------------*/
 

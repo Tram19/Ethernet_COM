@@ -1,0 +1,17 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:43:12:StatusEnum Type::String::Free()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:61:12:StatusEnum Type::String::Malloc(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:75:6:bool Type::String::operator!=(const char*) const	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:96:6:bool Type::String::operator!=(const Type::String&) const	4	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:116:6:bool Type::String::operator==(const char*) const	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:137:6:bool Type::String::operator==(const Type::String&) const	4	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:158:15:Type::String& Type::String::operator=(const Type::String&)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:180:15:Type::String& Type::String::operator=(const char*)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:200:14:Type::String Type::String::operator+(const char*)	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:221:14:Type::String Type::String::operator+(const Type::String&)	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:242:15:Type::String& Type::String::operator+=(const Type::String&)	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:268:15:Type::String& Type::String::operator+=(const char*)	32	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:298:12:StatusEnum Type::String::Remove()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:307:14:Type::String Type::String::Slip(char)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:316:6:bool Type::String::Compare(const char*, int)	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:338:6:bool Type::String::CompareFormEnd(const char*, int)	12	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Type/String/Src/string.cpp:363:12:StatusEnum Type::String::Convert(char*)	0	static

@@ -1,0 +1,43 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_common.hpp:69:13:HW::Base::Common::~Common()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_common.hpp:84:24:virtual StatusEnum HW::Base::Common::Open()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_common.hpp:90:24:virtual StatusEnum HW::Base::Common::Close()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_common.hpp:96:18:virtual bool HW::Base::Common::IsOpen()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_adc.hpp:62:22:virtual uint32_t HW::Base::Adc::Get()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:63:25:virtual StatusEnum HW::Base::I2c::SendMem(uint16_t, uint8_t)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:70:25:virtual StatusEnum HW::Base::I2c::Write(uint8_t*, int)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:73:25:virtual StatusEnum HW::Base::I2c::GetMem(uint16_t, uint8_t*)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:77:25:virtual StatusEnum HW::Base::I2c::Read(uint8_t*, int)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:79:25:virtual StatusEnum HW::Base::I2c::Reset()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:41:17:HW::Base::I2c::~I2c()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_adc.hpp:40:17:HW::Base::Adc::~Adc()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Submodule/SG14/SG14/inplace_function.h:101:19:static constexpr void stdext::inplace_function_detail::vtable<void>::vtable()::<lambda(stdext::inplace_function_detail::vtable<void>::storage_ptr_t, stdext::inplace_function_detail::vtable<void>::storage_ptr_t)>::_FUN(stdext::inplace_function_detail::vtable<void>::storage_ptr_t, stdext::inplace_function_detail::vtable<void>::storage_ptr_t)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Submodule/SG14/SG14/inplace_function.h:102:23:static constexpr void stdext::inplace_function_detail::vtable<void>::vtable()::<lambda(stdext::inplace_function_detail::vtable<void>::storage_ptr_t, stdext::inplace_function_detail::vtable<void>::storage_ptr_t)>::_FUN(stdext::inplace_function_detail::vtable<void>::storage_ptr_t, stdext::inplace_function_detail::vtable<void>::storage_ptr_t)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Submodule/SG14/SG14/inplace_function.h:103:25:static constexpr void stdext::inplace_function_detail::vtable<void>::vtable()::<lambda(stdext::inplace_function_detail::vtable<void>::storage_ptr_t)>::_FUN(stdext::inplace_function_detail::vtable<void>::storage_ptr_t)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/rtos_include.hpp:92:10:void RTOS::FreeTaskServiceCallback(void*) [with Task = TaskStatic<4096>]	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Stm32U5/Inc/hardware_u5_peripheral_i2c.hpp:45:23:HW::Peripheral::I2c::~I2c()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/PowerManager/powermanager.hpp:114:7:PowerManager::~PowerManager()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_adc.hpp:40:17:virtual HW::Base::Adc::~Adc()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_common.hpp:69:13:virtual HW::Base::Common::~Common()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Base/Inc/hardware_base_peripheral_i2c.hpp:41:17:virtual HW::Base::I2c::~I2c()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Stm32U5/Inc/hardware_u5_debug_log.hpp:63:10:HW::Debug::Log& HW::Debug::Log::operator<<(uint32_t)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.hpp:132:10:bool SleepMode_Com::_notify_ack(AckResult)	40	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.hpp:149:10:void SleepMode_Com::_handle_som_heartbeat()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/PowerManager/powermanager.hpp:114:7:PowerManager::PowerManager()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:352:1:void __static_initialization_and_destruction_0()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:107:12:StatusEnum SleepMode_Com::ForceWakeUp()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:116:12:StatusEnum SleepMode_Com::ForcePowerOn()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:125:12:StatusEnum SleepMode_Com::ForcePowerOff()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:134:12:StatusEnum SleepMode_Com::ForceSleep()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:143:12:StatusEnum SleepMode_Com::ForceReboot()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:156:13:IOExpander& SleepMode_Com::GetIOExpander()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:168:12:StatusEnum SleepMode_Com::_mainTaskFunc()	40	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/CMSIS_OS_V2/Inc/rtos_cmsis_os_v2_task_static.hpp:112:14:uint32_t RTOS::TaskStatic<S>::Set(uint32_t) [with unsigned int S = 4096]	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:96:12:StatusEnum SleepMode_Com::RequestPower(PowerAction, AckCallback, void*)	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/CMSIS_OS_V2/Inc/rtos_cmsis_os_v2_task_static.hpp:58:16:StatusEnum RTOS::TaskStatic<S>::Open() [with unsigned int S = 4096]	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:43:12:StatusEnum SleepMode_Com::Open()	24	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/RTOS/CMSIS_OS_V2/Inc/rtos_cmsis_os_v2_task_static.hpp:87:16:StatusEnum RTOS::TaskStatic<S>::Close() [with unsigned int S = 4096]	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:81:12:StatusEnum SleepMode_Com::Close()	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Submodule/SG14/SG14/inplace_function.h:98:21:stdext::inplace_function_detail::vtable<void>::vtable()::<lambda(stdext::inplace_function_detail::vtable<void>::storage_ptr_t)>	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Submodule/SG14/SG14/inplace_function.h:98:21:static constexpr void stdext::inplace_function_detail::vtable<void>::vtable()::<lambda(stdext::inplace_function_detail::vtable<void>::storage_ptr_t)>::_FUN(stdext::inplace_function_detail::vtable<void>::storage_ptr_t)	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/../Libraries/Hardware/Stm32U5/Inc/hardware_u5_peripheral_i2c.hpp:45:23:virtual HW::Peripheral::I2c::~I2c()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/User/SleepMode_Com/SleepMode_Com.cpp:352:1:cpp)	8	static

@@ -45,21 +45,14 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 file(GLOB_RECURSE GREMSY_LIB_SOURCES CONFIGURE_DEPENDS
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/*.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Libraries/*.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Libraries/*.cpp
 )
 file(GLOB_RECURSE USER_APP_SOURCES CONFIGURE_DEPENDS
     ${CMAKE_CURRENT_SOURCE_DIR}/User/*.c
     ${CMAKE_CURRENT_SOURCE_DIR}/User/*.cpp
 )
 # --- Exclude from build (tương đương "Exclude from Build" trong CubeIDE) ---
-set(EXCLUDED_SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/Modules/Storage/*.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/Modules/Motor/*.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/Modules/Encoder/*.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/Hardware/Stm32F4/*.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries/Hardware/Stm32H7/*.cpp
-)
 
 foreach(excluded_file ${EXCLUDED_SOURCES})
     list(REMOVE_ITEM GREMSY_LIB_SOURCES ${excluded_file})
@@ -75,10 +68,10 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # --- Thư viện dùng chung, tương ứng linked resources trong .project ---
     # GremsyLibraries -> PARENT-3-PROJECT_LOC/Libraries
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Libraries
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Libraries
     # DLibraries -> PARENT-3-PROJECT_LOC/DLibraries
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Submodule/SG14/SG14
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../Submodule/etl/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Submodule/SG14/SG14
+    ${CMAKE_CURRENT_SOURCE_DIR}/../Submodule/etl/include
     ${CMAKE_CURRENT_SOURCE_DIR}/User
     # Add user defined include paths
 )

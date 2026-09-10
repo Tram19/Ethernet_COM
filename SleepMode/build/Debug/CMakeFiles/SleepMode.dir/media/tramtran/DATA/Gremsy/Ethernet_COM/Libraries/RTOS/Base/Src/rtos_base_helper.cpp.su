@@ -1,0 +1,2 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/RTOS/Base/Src/rtos_base_helper.cpp:46:6:bool RTOS::IsInsideISR()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/RTOS/Base/Src/rtos_base_helper.cpp:48:6:bool RTOS::IsSchedulerRunning()	8	static

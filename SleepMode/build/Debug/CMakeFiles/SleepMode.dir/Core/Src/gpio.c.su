@@ -1,0 +1,3 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/gpio.c:32:6:MX_GPIO_EnableClock	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/gpio.c:41:6:MX_GPIO_Init_Struct	48	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/gpio.c:89:6:MX_GPIO_Init	72	static

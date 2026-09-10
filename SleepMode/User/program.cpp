@@ -28,13 +28,12 @@
 #include "SleepMode_Com/SleepMode_Com.hpp"
 #include "StorageParam/StorageParam.hpp"
 #include "ComPortManager/ComPortManager.hpp"
-#include "GLinkHandler/GLinkHandler.hpp"
 #include "MavlinkHandler/MavlinkHandler.hpp"
 
 /* Private variables ---------------------------------------------------------*/
 HW::Peripheral::Flash _flash;
 SleepMode_Com         sleepmode_com;
-GLinkHandler          glink_handler(ComPortManager::GetInstance().GlinkComm0(), &sleepmode_com);
+
 MavlinkHandler        mavlink_handler(sleepmode_com);
 
 enum class AppState : uint8_t {

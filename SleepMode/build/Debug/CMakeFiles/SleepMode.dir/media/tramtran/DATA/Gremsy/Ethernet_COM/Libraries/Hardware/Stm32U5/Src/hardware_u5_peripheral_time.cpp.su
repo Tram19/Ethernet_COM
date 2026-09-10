@@ -1,0 +1,13 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:54:6:void hardware_h7_peripheral_time_period_elapsed_callback(__TIM_HandleTypeDef*)	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:185:10:static uint32_t HW::Peripheral::Time::GetTick()	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:63:23:HW::Peripheral::Time& HW::Peripheral::Time::operator=(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:74:6:bool HW::Peripheral::Time::operator==(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:91:6:bool HW::Peripheral::Time::operator>(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:109:6:bool HW::Peripheral::Time::operator<(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:127:6:bool HW::Peripheral::Time::operator>=(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:145:6:bool HW::Peripheral::Time::operator<=(int)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:165:10:uint32_t HW::Peripheral::Time::operator>>(TimeProcessEnum)	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:203:10:static uint32_t HW::Peripheral::Time::GetSystemTimeUs()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:212:10:static uint32_t HW::Peripheral::Time::GetSystemTimeMs()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:221:10:static uint32_t HW::Peripheral::Time::GetSystemTimeS()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_time.cpp:230:12:static StatusEnum HW::Peripheral::Time::Init()	8	static

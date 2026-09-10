@@ -1,0 +1,5 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/usart.c:44:6:MX_UART4_Init	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/usart.c:88:6:MX_USART1_UART_Init	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/usart.c:132:6:MX_USART3_UART_Init	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/usart.c:175:6:HAL_UART_MspInit	368	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/usart.c:557:6:HAL_UART_MspDeInit	8	static

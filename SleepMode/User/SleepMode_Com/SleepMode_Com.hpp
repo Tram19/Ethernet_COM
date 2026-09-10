@@ -20,7 +20,6 @@
 #include "gremsy_include.hpp"
 #include "Driver/Mavlink/Inc/driver_mavlink.hpp"
 #include "ComPortManager/ComPortManager.hpp"
-#include "Modules/SignalClone/Inc/module_signal_clone.hpp"
 #include "RTOS/FreeRTOS/Inc/free_rtos_mutex.hpp"
 using namespace Driver::Mavlink;
 

@@ -1,0 +1,4 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/stm32u5xx_hal_timebase_tim.c:139:6:TimeBase_TIM_PeriodElapsedCallback	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/stm32u5xx_hal_timebase_tim.c:42:19:HAL_InitTick	48	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/stm32u5xx_hal_timebase_tim.c:112:6:HAL_SuspendTick	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/stm32u5xx_hal_timebase_tim.c:124:6:HAL_ResumeTick	0	static

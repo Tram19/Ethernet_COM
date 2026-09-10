@@ -1,0 +1,2 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/RTOS/FreeRTOS/Src/free_rtos_mutex.cpp:44:12:StatusEnum RTOS::StaticMutex::Open()	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/RTOS/FreeRTOS/Src/free_rtos_mutex.cpp:63:12:StatusEnum RTOS::DynamicMutex::Open()	8	static

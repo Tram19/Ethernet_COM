@@ -1,0 +1,6 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/main.c:70:13:CheckResetCause	80	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/main.c:100:6:vApplicationStackOverflowHook	72	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/main.c:274:6:HAL_TIM_PeriodElapsedCallback	8	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/main.c:292:6:Error_Handler	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/main.c:212:6:SystemClock_Config	128	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/Core/Src/main.c:119:5:main	8	static

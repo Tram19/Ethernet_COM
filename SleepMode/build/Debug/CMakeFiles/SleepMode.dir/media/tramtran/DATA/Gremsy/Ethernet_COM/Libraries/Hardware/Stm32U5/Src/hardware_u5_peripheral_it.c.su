@@ -1,0 +1,17 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:24:6:g_hardware_exti_set_func_callback	0	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:45:1:EXTI0_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:46:1:EXTI1_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:47:1:EXTI2_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:48:1:EXTI3_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:49:1:EXTI4_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:50:1:EXTI5_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:51:1:EXTI6_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:52:1:EXTI7_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:53:1:EXTI8_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:54:1:EXTI9_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:55:1:EXTI10_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:56:1:EXTI11_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:57:1:EXTI12_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:58:1:EXTI13_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:59:1:EXTI14_IRQHandler	16	static
+/media/tramtran/DATA/Gremsy/Ethernet_COM/Libraries/Hardware/Stm32U5/Src/hardware_u5_peripheral_it.c:60:1:EXTI15_IRQHandler	16	static

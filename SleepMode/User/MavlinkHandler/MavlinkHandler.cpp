@@ -9,8 +9,6 @@
 #include "ComPortManager/ComPortManager.hpp"
 #include "Modules/Ethernet_COM/Ethernet_COM.hpp"
 #include "StorageParam/StorageParam.hpp"
-#include "Modules/SensorStream/SensorStream.hpp"
-#include "Signal_Clone/signal_clone.hpp"
 #include "gremsy.hpp"
 #include "RTOS/rtos.hpp"
 #include "RTOS/rtos_include.hpp"

@@ -27,10 +27,9 @@
 
 /* Includes ------------------------------------------------------------------*/
 
-#include "Modules/Imu/Inc/module_imu.hpp"
-#include "Modules/Storage/Inc/module_storage.hpp"
+
 #include "Modules/Protocol/Inc/module_protocol.hpp"
-#include "Modules/Motor/Inc/module_motor.hpp"
+
 
 
 /* Exported types ------------------------------------------------------------*/

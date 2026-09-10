@@ -1,0 +1,7 @@
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/CMakeFiles/SleepMode.dir
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/CMakeFiles/edit_cache.dir
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/CMakeFiles/rebuild_cache.dir
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/cmake/stm32cubemx/CMakeFiles/RTOS2.dir
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/media/tramtran/DATA/Gremsy/Ethernet_COM/SleepMode/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
