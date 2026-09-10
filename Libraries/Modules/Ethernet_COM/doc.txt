@@ -1,0 +1,99 @@
+
+1. Interface — cầu nối giữa 2 layer
+Sau này thêm receiver khác không cần sửa Ethernet_COM:
+
+// IUdpReceiver.hpp
+class IUdpReceiver {
+public:
+    virtual void OnUdpReceived(const uint8_t* data, uint16_t len) = 0;
+};
+
+
+
+2. Register — đăng ký lúc khởi động
+
+SleepMode_Com::Open()
+    └── _ethernetCom.Open()        // start ethernet task
+    └── comm2.Open()
+            └── eth_.RegisterUdpReceiver(local port, this)
+                    └── udpReceivers_[0] = { port=local port, receiver=&comm2 }
+
+
+// Ethernet_COM lưu vào mảng
+void Ethernet_COM::RegisterUdpReceiver(uint16_t port, IUdpReceiver* receiver) {
+    udpReceivers_[udpReceiverCount_++] = { port, receiver };
+}
+
+
+
+3. Dispatch — khi có packet đến
+[Ethernet Task - while(1)]
+    │
+    ├── enc_.ReceiveFrame()         // poll ENC28J60 mỗi 10ms
+    │       └── không có frame → continue
+    │
+    ├── ETH_Process()
+    │       ├── ARP  → build reply → enc_.TransmitFrame()  (ngay trong task)
+    │       ├── ICMP → build reply → enc_.TransmitFrame()  (ngay trong task)
+    │       └── UDP  → UDP_Dispatch()
+    │                       │
+    │               tìm port trong udpReceivers_[]
+    │                       │
+    |               save drone ip, drone port to udpReceivers_[i], peer know = true
+    │               udpReceivers_[i].receiver->OnUdpReceived(data, len)
+    │                       │
+    │               UdpCOMPort::OnUdpReceived()
+    │                       │
+    │               COMPortBase::ReadDataCallback()
+    │                       │
+    │               mavlink_parse_char() byte-by-byte
+    │                       │
+    │               Manager::ParseMessageCallback()
+    │                       │
+    │               _received_msg_callback()
+    │                       │
+    │               _Mavlink_Main_Task.Set(flag)  ← unblock MAVLink task
+    │
+    └── g_os_delay(10ms)
+
+[MAVLink Task]
+    └── Wait(flag) → thức dậy → _send_command_ack() → SinkIt()
+                                                           │
+                                               eth_.SendUdp()
+                                                           │
+                                               enc_.TransmitFrame()
+
+4. Tóm tắt ownership
+program.cpp
+    HW::Peripheral::Spi _spi2          ← own SPI duy nhất
+    │
+    SleepMode_Com
+        Ethernet_COM _ethernetCom      ← own ENC28J60, own ethernet task
+            ENC28J60 enc_(_spi2)       ← dùng SPI trực tiếp
+            udpReceivers_[]            ← bảng đăng ký
+        │
+        UdpCOMPort comm2(_ethernetCom) ← chỉ biết Ethernet_COM
+            Ethernet_COM& eth_         ← không đụng SPI
+
+
+Ethernet_COM   → owns hardware, owns task, dispatch packet
+UdpCOMPort     → chỉ register + nhận callback + gửi qua eth_
+SPI            → khai báo duy nhất 1 nơi, truyền xuống bằng reference
+
+
+
+
+    ┌─────────────────────────────┐
+    │ comm2 (UdpCOMPort)          │
+    │   chan                      │
+    │   eth_                      │
+    │   cfg_                      │
+    │   rxMsg                     │
+    │   isOpen                    │
+    │   OnUdpReceived()  ◄────────┼── Ethernet_COM gọi qua IUdpReceiver*
+    │   SinkIt()                  │
+    └─────────────────────────────┘
+         ↑                ↑
+    UdpCOMPort*      IUdpReceiver*
+    (SleepMode_Com   (Ethernet_COM
+     nhìn vào)        nhìn vào)
